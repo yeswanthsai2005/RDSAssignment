@@ -21,7 +21,7 @@ resource "aws_security_group" "default" {
   vpc_id      = var.vpc_id
   tags        = module.this.tags
 }
-
+    
 resource "aws_security_group_rule" "ingress_security_groups" {
   count                    = local.enabled ? length(var.security_groups) : 0
   description              = "Allow inbound traffic from existing security groups"
