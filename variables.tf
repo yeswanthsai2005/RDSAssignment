@@ -513,3 +513,4 @@ variable "lb_health_check_target" {
   type        = string
   default     = "HTTP:80/"
 }
+
