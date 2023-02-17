@@ -68,7 +68,7 @@ output "security_group_name" {
   value       = join("", aws_security_group.default.*.name)
   description = "Security Group name"
 }
-  
+ 
 # Outputs
 output "lb_dns_name" {
   value = aws_elb.lb.dns_name
